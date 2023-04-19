@@ -33,31 +33,31 @@
                                 <div class="form-group">
                                     <label><b>Mã bệnh nhân</b></label>
                                     <input type="text" class="form-control MaBN" placeholder="Ma benh nhan">
-                                    <p class="text-danger checkloi">(*)</p>
+                                    <p class="text-danger checkLoiMa">(*)</p>
                                 </div>
                                 <div class="form-group">
                                     <label><b>Mật khẩu</b></label>
-                                    <input type="text" class="form-control MatKhau" placeholder="Mat Khau">
-                                    <p class="text-danger checkloi">(*)</p>
+                                    <input type="password" class="form-control MatKhau" placeholder="Mat Khau">
+                                    <p class="text-danger checkLoiMK">(*)</p>
                                 </div>
                                 <div class="form-group">
                                     <label><b>Ngày khám</b></label>
-                                    <input type="text" class="form-control NgayKham" placeholder="mm/dd/yyyy">
-                                    <p class="text-danger checkloi">(*)</p>
+                                    <input type="date" class="form-control NgayKham" placeholder="mm/dd/yyyy">
+                                    <p class="text-danger checkLoiNgay">(*)</p>
                                 </div>
                                 <div class="form-group">
                                     <label><b>Loại dịch vụ</b></label>
                                     <br>
-                                    <input type="checkbox">Khám bệnh theo yêu cầu
-                                    <input type="checkbox">Điều trị ngoại trú
-                                    <input type="checkbox">Bác sĩ theo yêu cầu
+                                    <input type="checkbox" class="kham">Khám bệnh theo yêu cầu
+                                    <input type="checkbox" class="dieutri">Điều trị ngoại trú
+                                    <input type="checkbox" class="bacsi">Bác sĩ theo yêu cầu
                                 </div>
                                 <div class="form-group">
                                     <label><b>Chuyên khoa</b></label>
-                                    <select class="form-control">
-                                        <option value="" id="option1">Ngoại tổng quát</option>
-                                        <option value="" id="option2">Nhi</option>
-                                        <option value="" id="option3">Nội tổng quát</option>
+                                    <select class="form-control chuyenkhoa">
+                                        <option value="Ngoại tổng quát" id="option1">Ngoại tổng quát</option>
+                                        <option value="Nhi" id="option2">Nhi</option>
+                                        <option value="Nội tổng quát" id="option3">Nội tổng quát</option>
                                     </select>
                                 </div>
                                 <button type="button" class="btn-primary text-center DatLich">Đặt lịch</button>
@@ -82,7 +82,7 @@
                     <th>Chuyên khoa</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="DonKham">
                 <tr>
                     <td class="text-center STT">1</td>
                     <td>123456a</td>
